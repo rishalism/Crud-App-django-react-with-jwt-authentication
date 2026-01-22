@@ -35,6 +35,10 @@ function Login() {
     }
   };
 
+  const NavigateToSignup = () => {
+    navigate("/signup");
+  };
+
   return (
     <div className="min-h-screen  from-blue-500 to-purple-600 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md">
@@ -96,7 +100,11 @@ function Login() {
 
         <p className="text-center text-gray-600 text-sm mt-6">
           Don't have an account?{" "}
-          <a href="#" className="text-blue-500 hover:text-blue-700 font-medium">
+          <a
+            onClick={NavigateToSignup}
+            href="#"
+            className="text-blue-500 hover:text-blue-700 font-medium"
+          >
             Sign up
           </a>
         </p>

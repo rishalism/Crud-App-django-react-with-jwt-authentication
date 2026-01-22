@@ -59,3 +59,7 @@ export const LoginUser = (username: string, password: string) =>
 export const GetRefreshToken = (refresh: string) => {
   return API.post("token/refresh/", { refresh });
 };
+
+export const RegisterUser = (username: string, password: string) => {
+  return API.post("register/", { username, password });
+};
